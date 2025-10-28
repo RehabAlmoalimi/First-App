@@ -1,11 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse('hello world')
-
+    x={'name':'Rehab'}
+    return render(request,'pages/index.html',x)
 def about(request):
-    return HttpResponse('about pages')
-
+    pass
 
